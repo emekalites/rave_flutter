@@ -191,7 +191,7 @@ class _RavePayWidgetState extends BaseState<RavePayWidget>
         : null;
 
     var rightStr =
-        _initializer.companyName ?? _initializer.staging ? Strings.demo : '';
+        _initializer.companyName ?? (_initializer.staging ? Strings.demo : '');
     var rightText = Text(
       rightStr,
       maxLines: 1,
