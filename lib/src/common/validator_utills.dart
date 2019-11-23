@@ -168,8 +168,9 @@ class ValidatorUtils {
       return Strings.cannotBeNull('withUgMobileMoney');
     if (init.isPreAuth == null) return Strings.cannotBeNull('isPreAuth');
     if (init.displayFee == null) return Strings.cannotBeNull('displayFee');
-    if (init.displayEmail) return Strings.cannotBeNull("displayEmail");
-    if (init.displayAmount) return Strings.cannotBeNull("displayAmount");
+    if (init.displayEmail == null) return Strings.cannotBeNull("displayEmail");
+    if (init.displayAmount == null)
+      return Strings.cannotBeNull("displayAmount");
     if (!init.acceptCardPayments &&
         !init.acceptAccountPayments &&
         !init.acceptMpesaPayments &&

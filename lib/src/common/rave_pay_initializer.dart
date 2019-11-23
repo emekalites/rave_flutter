@@ -95,7 +95,7 @@ class RavePayInitializer {
 
   /// Company name. Displayed on the top right of the payment prompt.
   /// If null and [staging] is true, a "Demo" text is displayed.
-  Widget companyName;
+  String companyName;
 
   /// URL to redirect to when a transaction is completed. This is useful for 3DSecure payments so we can redirect your customer back to a custom page you want to show them.
   String redirectUrl;
